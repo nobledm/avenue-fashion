@@ -1,1 +1,7 @@
 @import '../vars/index';
+
+body {
+    font-size: 93.75%;
+    line-height: 1.6;   /* 24px baseline */
+    font-family: $body-font;
+}
