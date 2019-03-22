@@ -1,0 +1,25 @@
+
+
+.page-header {
+    background: url(../../img/banner-small.jpg) no-repeat center / cover;
+    height: 310px;
+    padding: 8rem 0;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.title {
+    font-size: calc($h1 + 0.5vw);
+    line-height: 2.5rem;
+}
+
+.tagline {
+    font-size: calc($h2 + 0.2vw);
+}
+
+@media(min-width: 800px) {
+    .page-header {
+        background: url(../../img/banner.jpg) no-repeat center / cover;
+    }
+}

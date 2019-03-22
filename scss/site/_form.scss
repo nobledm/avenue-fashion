@@ -1,0 +1,15 @@
+@import '../vars/index';
+
+.client-registration {
+    padding: 1rem;
+    color: $lt-grey;
+
+    label {
+        display: block;
+    }
+
+    input {
+        width: 100%;
+        border: 1px solid $lt-grey-border;
+    }
+}

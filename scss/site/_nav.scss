@@ -1,0 +1,41 @@
+@import '../vars/index';
+
+.site-nav {
+    padding: 0.5rem 1rem;
+    color: $dark-grey;
+    font-family: $title-font;
+    font-size: $small;
+    text-transform: uppercase;
+}
+
+.icon-view {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.125rem;
+    margin-right: auto;
+}
+
+.toggle-menu-icon {
+    width: 1.5rem;
+}
+
+.list-view {
+    display: none;
+
+    li {
+        margin: 0 1rem;
+    }
+}
+
+@media(min-width:720px) {
+    .icon-view {
+        display: none;
+    }
+
+    .list-view {
+        display: flex;
+    }
+}

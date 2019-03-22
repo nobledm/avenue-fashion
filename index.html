@@ -7,31 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Avenue Fashion Account Register</title>
-    <link rel="preload" href="./fonts/roboto-v18-latin-regular.woff" as="font" crossorigin>
-    <link rel="preload" href="./fonts/roboto-v18-latin-regular.woff2" as="font" crossorigin>
+    <link rel="preload" href="./fonts/roboto/roboto-v18-latin-regular.woff" as="font" crossorigin>
+    <link rel="preload" href="./fonts/roboto/roboto-v18-latin-regular.woff2" as="font" crossorigin>
     <link rel="preload" href="./fonts/Montserrat/montserrat-v12-latin-300.woff" as="font" crossorigin>
-    <link rel="preload" href="./fonts/Montserrat/montserrat-v12-latin-300.woff2" as="font" crossorigin>
-    <link rel="preload" href="./fonts/Montserrat/montserrat-v12-latin-regular.woff" as="font" crossorigin>
-    <link rel="preload" href="./fonts/Montserrat/montserrat-v12-latin-regular.woff2" as="font" crossorigin>
-    <link rel="preload" href="./fonts/Montserrat/montserrat-v12-latin-700.woff" as="font" crossorigin>
-    <link rel="preload" href="./fonts/Montserrat/montserrat-v12-latin-700.woff2" as="font" crossorigin>
+    <link rel="preload" href="./fonts/montserrat/montserrat-v12-latin-300.woff2" as="font" crossorigin>
+    <link rel="preload" href="./fonts/montserrat/montserrat-v12-latin-regular.woff" as="font" crossorigin>
+    <link rel="preload" href="./fonts/montserrat/montserrat-v12-latin-regular.woff2" as="font" crossorigin>
+    <link rel="preload" href="./fonts/montserrat/montserrat-v12-latin-700.woff" as="font" crossorigin>
+    <link rel="preload" href="./fonts/montserrat/montserrat-v12-latin-700.woff2" as="font" crossorigin>
     <link rel="stylesheet" href="css/style.min.css">
 
 </head>
 
 <body>
-    <nav class="site-nav">
+    <nav class="site-nav" role="navigation">
         <ul class="icon-view">
-            <li>Avenue Fashion</li>
+            <li><h1 class="logo"><span class="bold">Avenue</span> Fashion</h1></li>
             <li>
                 <svg class="toggle-menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     <path d="M0 0h24v24H0z" fill="none"/>
-                    <path fill="currentColor" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    <path fill="#404045" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
                 </svg>
             </li>
         </ul>
         <aside id="menu-panel" class="menu-panel">
-            <ul class="mobile-lin">
+            <ul class="mobile-link">
                 <li>Mens</li>
                 <li>Womens</li>
                 <li>The Brand</li>
@@ -41,7 +41,7 @@
         </aside>
 
         <ul class="list-view">
-            <li>Avenue Fashion</li>
+            <li><h1 class="logo"><span class="bold">Avenue</span> Fashion</h1></li>
             <li>Mens</li>
             <li>Womens</li>
             <li>The Brand</li>
@@ -49,6 +49,53 @@
             <li>Look Book</li>
         </ul>
     </nav>
+
+    <header class="page-header">
+        <h1 class="title"><span class="bold">Avenue</span> Fashion Client Rewards</h1>
+        <p class="tagline">Register Today</p>
+    </header>
+
+    <main>
+        <aside>
+            <h3>Register</h3>
+            <form id="client-registration" class="client-registration">
+                <div class="first-name">
+                    <label for="first-name">First Name</label>
+                    <input id="first-name" type="text">
+                </div>
+                <div class="last-name">
+                    <label for="last-name">Last Name</label>
+                    <input id="last-name" type="text">
+                </div>
+                <div class="email">
+                    <label for="email">Email Address</label>
+                    <input id="email" type="text">
+                </div>
+                <div class="password">
+                    <label for="passowrd">Your Password</label>
+                    <input id="passowrd" type="text">
+                </div>
+                <div class="confirm-password">
+                    <label for="confirm-pass">Confirm Password</label>
+                    <input id="confirm-pass" type="text">
+                </div>
+                <div class="email-frequency">
+                    <label for="email-frequency">How often would you like an email?</label>
+                    <select name="" id="email-frequency"></select>
+                <div class="phone">
+                    <label for="phone">Phone Number (optional)</label>
+                    <input id="phone" type="text">
+                </div>
+                <div class="terms"></div>
+                
+            </form>
+        </aside>
+    </main>
+
+    <footer>
+
+    </footer>
+
     <script src="js/index.js"></script>
 </body>
 
