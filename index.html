@@ -16,14 +16,13 @@
     <link rel="preload" href="./fonts/montserrat/montserrat-v12-latin-700.woff" as="font" crossorigin>
     <link rel="preload" href="./fonts/montserrat/montserrat-v12-latin-700.woff2" as="font" crossorigin>
     <link rel="stylesheet" href="css/style.min.css">
-
 </head>
 
 <body>
     <nav class="site-nav" role="navigation">
         <ul class="icon-view">
             <li class="logo"><h1><span class="bold">Avenue</span> Fashion</h1></li>
-            <li>
+            <li id="mobile-menu-button">
                 <svg class="toggle-menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     <path d="M0 0h24v24H0z" fill="none"/>
                     <path fill="#404045" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
@@ -102,8 +101,25 @@
                 </div>
 
                 <h4>Sign up for</h4>
-                <div class="services">
-
+                <div class="flex-row services">
+                    <div>
+                        <input type="checkbox" name="exclusives" id="exclusives" value="exclusives"> exclusive updates
+                    </div>
+                    <div>
+                        <input type="checkbox" name="sales" id="sales" value="sales"> discounts/sales
+                    </div>
+                    <div>
+                        <input type="checkbox" name="newArrivals" id="newArrivals" value="newArrivals"> new arrivals
+                    </div>
+                    <div>
+                        <input type="checkbox" name="contests" id="contests" value="contests"> contests
+                    </div>
+                    <div>
+                        <input type="checkbox" name="everything" id="everything" value="everything"> everything
+                    </div>
+                    <div>
+                        <input type="checkbox" name="coupons" id="coupons" value="coupons"> coupons
+                    </div>
                 </div>
 
                 <h4>Preferences (optional)</h4>
@@ -111,11 +127,19 @@
         </aside>
     </main>
 
-    <footer>
+    <footer class="site-footer">
+        <div class="wrapper">
+            <aside>
 
+            </aside>
+            
+            <span class="copyright">&copy; 2016 Avenue Fashion &trade;</span>
+        </div>
     </footer>
 
-    <script src="js/index.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/ScrollToPlugin.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
 </body>
 
 </html>

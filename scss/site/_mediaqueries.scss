@@ -1,10 +1,15 @@
-@media(min-width:760px) {
-    .icon-view { display: none; }
-    .list-view { display: flex; }
+@media(min-width: 615px) {
+    .page-header {
+        background: url(../../img/banner.jpg) no-repeat center / cover;
+    }
+}
 
+@media(min-width: 615px) {
     .page-header {
         margin-bottom: 4.5rem;
     }
+
+    main { margin-bottom: 3rem; }
 
     .client-registration {
         display: grid;
@@ -13,8 +18,7 @@
     }
 }
 
-@media(min-width: 615px) {
-    .page-header {
-        background: url(../../img/banner.jpg) no-repeat center / cover;
-    }
+@media(min-width:760px) {
+    .icon-view { display: none; }
+    .list-view { display: flex; }
 }

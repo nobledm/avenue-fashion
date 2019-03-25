@@ -2,3 +2,15 @@
 
 .bold { font-weight: 700; }
 .active { color: $teal; }
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.wrapper {
+    max-width: 52.75rem;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+}

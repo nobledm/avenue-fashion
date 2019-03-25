@@ -9,7 +9,7 @@
         font-weight: 300;
     }
 
-    input, select, textarea {
+    [type="text"], select, textarea {
         width: 100%;
         border: 1px solid $lt-grey-border;
         margin-bottom: 0.75rem;
@@ -25,24 +25,39 @@
         height: 1.8rem;
     }
 
-    h4, .email, .terms {
+    h4 {
         grid-column: span 2;
     }
 }
 
+.email, 
+.terms,
+.message,
+.services {
+    grid-column: span 2;
+}
+
 .terms {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
+    
+    label {
+        font-family: 'Roboto';
+    }
 
     input {
-        width: auto;
         margin-right: 1rem;
     }
 }
 
 .message {
-    grid-column: span 2;
-
     textarea {
         padding: 0 2px;
+        height: 11.25rem;
+    }
+}
+
+.services {
+    div {
+        flex: 33%;
     }
 }

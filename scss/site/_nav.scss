@@ -1,11 +1,13 @@
 @import '../vars/index';
 
 .site-nav {
+    position: relative;
     padding: 0.5rem 3rem;
     color: $dark-grey;
     font-family: $title-font;
     font-size: $small;
     text-transform: uppercase;
+    z-index: 100;
 }
 
 .icon-view {
@@ -23,19 +25,25 @@
 
 .toggle-menu-icon {
     width: 1.5rem;
+    cursor: pointer;
 }
 
 /* Mobile Menu */
 .menu-panel {
     position: fixed;
-    width: 100%;
-    top: -40rem;
-    left: 0;
-    padding-top: 5rem;
-    z-index: 100;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    background: #fff;
+    width: 30%;
+    top: 0;
+    right: -40%;
+    padding-top: 2.5rem;
+    z-index: -1;
+}
+
+.mobile-link a {
+    display: block;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
 
 .list-view {
     display: none;
