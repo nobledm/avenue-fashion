@@ -1,0 +1,20 @@
+@media(min-width:760px) {
+    .icon-view { display: none; }
+    .list-view { display: flex; }
+
+    .page-header {
+        margin-bottom: 4.5rem;
+    }
+
+    .client-registration {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2rem;
+    }
+}
+
+@media(min-width: 615px) {
+    .page-header {
+        background: url(../../img/banner.jpg) no-repeat center / cover;
+    }
+}

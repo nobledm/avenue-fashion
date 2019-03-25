@@ -6,14 +6,32 @@ body {
     font-family: $body-font;
 }
 
-h1 {
-    font-size: $h1;
-}
+h1 { font-size: $h1; }
 
-h2 {
-    font-size: $h2;
+h2 { font-size: $h2; }
+
+h2, h3, h4 {
+    font-family: $title-font;
+    line-height: 1.5rem;
 }
 
 h3 {
     font-size: $h3;
+    color: $mid-grey;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: $h4;
+    color: $mid-grey;
+}
+
+a {
+    text-decoration: none;
+    color: $dark-grey;
+}
+
+a:hover,
+a:active {
+    color: $teal;
 }

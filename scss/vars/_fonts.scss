@@ -43,7 +43,7 @@
 }
 
 $body-font: 'Roboto';
-$title-font: 'Montserrat Regular';
+$title-font: 'Montserrat';
 
 
 /*  BASE 16 ... BODY SCALE 93.75%
@@ -52,5 +52,6 @@ $title-font: 'Montserrat Regular';
 $h1: 1.9438rem;     /* 31.1px */
 $h2: 1.35rem;       /* 21.6px */
 $h3: 1.125rem;      /* 18px */
+$h4: 1rem;          /* 16px     -- not part of the scale but this assignment's scale is whack and h4 needs to be bigger than body text*/
 $note-size: 0.7813rem;  /* 12.5px */
 $small: 0.6513rem;      /* 10.42px */

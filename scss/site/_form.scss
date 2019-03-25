@@ -1,15 +1,48 @@
 @import '../vars/index';
 
 .client-registration {
-    padding: 1rem;
     color: $lt-grey;
+    margin: 1rem auto 0;
 
     label {
-        display: block;
+        font-family: $title-font;
+        font-weight: 300;
     }
 
-    input {
+    input, select, textarea {
         width: 100%;
         border: 1px solid $lt-grey-border;
+        margin-bottom: 0.75rem;
+        color: $lt-grey;
+    }
+
+    input { 
+        background-color: transparent; 
+        line-height: 1.5rem;
+    }
+
+    select {
+        height: 1.8rem;
+    }
+
+    h4, .email, .terms {
+        grid-column: span 2;
+    }
+}
+
+.terms {
+    margin-bottom: 1.5rem;
+
+    input {
+        width: auto;
+        margin-right: 1rem;
+    }
+}
+
+.message {
+    grid-column: span 2;
+
+    textarea {
+        padding: 0 2px;
     }
 }

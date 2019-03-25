@@ -22,7 +22,7 @@
 <body>
     <nav class="site-nav" role="navigation">
         <ul class="icon-view">
-            <li><h1 class="logo"><span class="bold">Avenue</span> Fashion</h1></li>
+            <li class="logo"><h1><span class="bold">Avenue</span> Fashion</h1></li>
             <li>
                 <svg class="toggle-menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     <path d="M0 0h24v24H0z" fill="none"/>
@@ -32,21 +32,21 @@
         </ul>
         <aside id="menu-panel" class="menu-panel">
             <ul class="mobile-link">
-                <li>Mens</li>
-                <li>Womens</li>
-                <li>The Brand</li>
-                <li>Local Stores</li>
-                <li>Look Book</li>
+                <li><a class="active" href="#">Mens</a></li>
+                <li><a href="#">Womens</a></li>
+                <li><a href="#">The Brand</a></li>
+                <li><a href="#">Local Stores</a></li>
+                <li><a href="#">Look Book</a></li>
             </ul>
         </aside>
 
         <ul class="list-view">
-            <li><h1 class="logo"><span class="bold">Avenue</span> Fashion</h1></li>
-            <li>Mens</li>
-            <li>Womens</li>
-            <li>The Brand</li>
-            <li>Local Stores</li>
-            <li>Look Book</li>
+            <li class="logo"><h1><span class="bold">Avenue</span> Fashion</h1></li>
+            <li><a class="active" href="#">Mens</a></li>
+            <li><a href="#">Womens</a></li>
+            <li><a href="#">The Brand</a></li>
+            <li><a href="#">Local Stores</a></li>
+            <li><a href="#">Look Book</a></li>
         </ul>
     </nav>
 
@@ -60,34 +60,53 @@
             <h3>Register</h3>
             <form id="client-registration" class="client-registration">
                 <div class="first-name">
-                    <label for="first-name">First Name</label>
-                    <input id="first-name" type="text">
+                    <label for="firstName">First Name</label>
+                    <input id="firstName" name="firstName" type="text" />
                 </div>
                 <div class="last-name">
-                    <label for="last-name">Last Name</label>
-                    <input id="last-name" type="text">
+                    <label for="lastName">Last Name</label>
+                    <input id="lastName" name="lastName" type="text" />
                 </div>
                 <div class="email">
                     <label for="email">Email Address</label>
-                    <input id="email" type="text">
+                    <input id="email" name="email" type="text" />
                 </div>
                 <div class="password">
-                    <label for="passowrd">Your Password</label>
-                    <input id="passowrd" type="text">
+                    <label for="password">Your Password</label>
+                    <input id="password" name="password" type="text" />
                 </div>
                 <div class="confirm-password">
-                    <label for="confirm-pass">Confirm Password</label>
-                    <input id="confirm-pass" type="text">
+                    <label for="confirmPass">Confirm Password</label>
+                    <input id="confirmPass" name="confirmPass" type="text" />
                 </div>
                 <div class="email-frequency">
-                    <label for="email-frequency">How often would you like an email?</label>
-                    <select name="" id="email-frequency"></select>
+                    <label for="emailFrequency">How often would you like an email?</label>
+                    <select id="emailFrequency">
+                        <option value="daily">Daily</option>
+                        <option value="weekly">Weekly</option>
+                        <option value="monthly">Monthly</option>
+                        <option value="never">Never</option>
+                    </select>
+                </div>
                 <div class="phone">
                     <label for="phone">Phone Number (optional)</label>
-                    <input id="phone" type="text">
+                    <input id="phone" name="phone" type="text" />
                 </div>
-                <div class="terms"></div>
-                
+                <div class="terms">
+                    <input id="agree" name="agree" type="radio" />
+                    <label>I agree to the terms and conditions of the website. I may opt out at any time.</label>
+                </div>
+                <div class="message">
+                    <label for="message">Send us a message (optional)</label>
+                    <textarea id="message"></textarea>
+                </div>
+
+                <h4>Sign up for</h4>
+                <div class="services">
+
+                </div>
+
+                <h4>Preferences (optional)</h4>
             </form>
         </aside>
     </main>
