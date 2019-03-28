@@ -55,76 +55,109 @@
     </header>
 
     <main>
-        <aside>
-            <h3>Register</h3>
-            <form id="client-registration" class="client-registration">
-                <div class="first-name">
-                    <label for="firstName">First Name</label>
-                    <input id="firstName" name="firstName" type="text" />
-                </div>
-                <div class="last-name">
-                    <label for="lastName">Last Name</label>
-                    <input id="lastName" name="lastName" type="text" />
-                </div>
-                <div class="email">
-                    <label for="email">Email Address</label>
-                    <input id="email" name="email" type="text" />
-                </div>
-                <div class="password">
-                    <label for="password">Your Password</label>
-                    <input id="password" name="password" type="text" />
-                </div>
-                <div class="confirm-password">
-                    <label for="confirmPass">Confirm Password</label>
-                    <input id="confirmPass" name="confirmPass" type="text" />
-                </div>
-                <div class="email-frequency">
-                    <label for="emailFrequency">How often would you like an email?</label>
-                    <select id="emailFrequency">
-                        <option value="daily">Daily</option>
-                        <option value="weekly">Weekly</option>
-                        <option value="monthly">Monthly</option>
-                        <option value="never">Never</option>
-                    </select>
-                </div>
-                <div class="phone">
-                    <label for="phone">Phone Number (optional)</label>
-                    <input id="phone" name="phone" type="text" />
-                </div>
-                <div class="terms">
-                    <input id="agree" name="agree" type="radio" />
-                    <label>I agree to the terms and conditions of the website. I may opt out at any time.</label>
-                </div>
-                <div class="message">
-                    <label for="message">Send us a message (optional)</label>
-                    <textarea id="message"></textarea>
-                </div>
+        <h3>Register</h3>
+        <form id="client-registration" class="client-registration">
+            <div class="first-name">
+                <label for="firstName">First Name</label>
+                <input id="firstName" name="firstName" type="text" />
+            </div>
+            <div class="last-name">
+                <label for="lastName">Last Name</label>
+                <input id="lastName" name="lastName" type="text" />
+            </div>
+            <div class="email">
+                <label for="email">Email Address</label>
+                <input id="email" name="email" type="text" />
+            </div>
+            <div class="password">
+                <label for="password">Your Password</label>
+                <input id="password" name="password" type="text" />
+            </div>
+            <div class="confirm-password">
+                <label for="confirmPass">Confirm Password</label>
+                <input id="confirmPass" name="confirmPass" type="text" />
+            </div>
+            <div class="email-frequency">
+                <label for="emailFrequency">How often would you like an email?</label>
+                <select id="emailFrequency">
+                    <option value="daily">Daily</option>
+                    <option value="weekly">Weekly</option>
+                    <option value="monthly">Monthly</option>
+                    <option value="never">Never</option>
+                </select>
+            </div>
+            <div class="phone">
+                <label for="phone">Phone Number (optional)</label>
+                <input id="phone" name="phone" type="text" />
+            </div>
+            <div class="terms">
+                <input id="agree" name="agree" type="radio" />
+                <label>I agree to the terms and conditions of the website. I may opt out at any time.</label>
+            </div>
+            <div class="message">
+                <label for="message">Send us a message (optional)</label>
+                <textarea id="message"></textarea>
+            </div>
 
-                <h4>Sign up for</h4>
-                <div class="flex-row services">
-                    <div>
-                        <input type="checkbox" name="exclusives" id="exclusives" value="exclusives"> exclusive updates
-                    </div>
-                    <div>
-                        <input type="checkbox" name="sales" id="sales" value="sales"> discounts/sales
-                    </div>
-                    <div>
-                        <input type="checkbox" name="newArrivals" id="newArrivals" value="newArrivals"> new arrivals
-                    </div>
-                    <div>
-                        <input type="checkbox" name="contests" id="contests" value="contests"> contests
-                    </div>
-                    <div>
-                        <input type="checkbox" name="everything" id="everything" value="everything"> everything
-                    </div>
-                    <div>
-                        <input type="checkbox" name="coupons" id="coupons" value="coupons"> coupons
-                    </div>
+            <h4>Sign up for</h4>
+            <aside class="flex-row services">
+                <div>
+                    <input type="checkbox" name="exclusives" id="exclusives" value="exclusives"> 
+                    <label for="exclusives">exclusive updates</label>
                 </div>
+                <div>
+                    <input type="checkbox" name="sales" id="sales" value="sales"> 
+                    <label for="sales">discounts/sales</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="newArrivals" id="newArrivals" value="newArrivals"> 
+                    <label for="newArrivals">new arrivals</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="contests" id="contests" value="contests"> 
+                    <label for="contests">contests</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="everything" id="everything" value="everything"> 
+                    <label for="everything">everything</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="coupons" id="coupons" value="coupons"> 
+                    <label for="coupons">coupons</label>
+                </div>
+            </aside>
 
-                <h4>Preferences (optional)</h4>
-            </form>
-        </aside>
+            <h4>Preferences (optional)</h4>
+            <div class="language">
+                <label for="lang">Language</label>
+                <select name="lang" id="lang">
+                    <option value="english">English</option>
+                    <option value="french">French</option>
+                    <option value="spanish">Spanish</option>
+                    <option value="german">German</option>
+                </select>
+            </div>
+            <div class="size">
+                <label for="clothingSize">Clothing size</label>
+                <select name="clothing-size" id="clothingSize">
+                    <option value="xs">XS</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="xl">XL</option>
+                    <option value="xxl">XXL</option>
+                </select>
+            </div>
+            <div class="location">
+                <label for="yourStore">Your Store Location</label>
+                <select name="your-store" id="yourStore">
+                    <option value="edmonton">Edmonton, AB</option>
+                </select>
+            </div>
+
+            <input type="submit" value="Create Account">
+            <p>By clicking 'Create Account', you agree to our <a href="#">Privacy Policy &#10132;</a></p>
+        </form>
     </main>
 
     <footer class="site-footer">

@@ -10,6 +10,17 @@
     z-index: 100;
 }
 
+.site-nav a,
+.mobile-links a {
+    color: $dark-grey;
+}
+
+.site-nav a:hover,
+.site-nav .active,
+.mobile-links a:hover {
+    color: $teal;
+}
+
 .icon-view {
     display: flex;
     justify-content: space-between;

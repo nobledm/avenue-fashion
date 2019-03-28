@@ -4,6 +4,11 @@
     color: $lt-grey;
     margin: 1rem auto 0;
 
+    h4 {
+        grid-column: span 2;
+        margin-bottom: 0.5rem;
+    }
+
     label {
         font-family: $title-font;
         font-weight: 300;
@@ -25,8 +30,8 @@
         height: 1.8rem;
     }
 
-    h4 {
-        grid-column: span 2;
+    [type="checkbox"] {
+        margin-right: 0.625rem;
     }
 }
 
@@ -57,7 +62,10 @@
 }
 
 .services {
+    margin-bottom: 1rem;
+
     div {
         flex: 33%;
+        font-size: calc(10px + 0.5vw);
     }
 }

@@ -21,4 +21,8 @@
 @media(min-width:760px) {
     .icon-view { display: none; }
     .list-view { display: flex; }
+
+    .services div {
+        font-size: 0.9375rem;
+    }
 }
