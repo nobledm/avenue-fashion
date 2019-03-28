@@ -1,12 +1,11 @@
 @import '../vars/index';
+@import 'utility';
 
 .site-nav {
     position: relative;
     padding: 0.5rem 3rem;
     color: $dark-grey;
-    font-family: $title-font;
     font-size: $small;
-    text-transform: uppercase;
     z-index: 100;
 }
 
@@ -16,7 +15,7 @@
 }
 
 .site-nav a:hover,
-.site-nav .active,
+.site-nav .teal,
 .mobile-links a:hover {
     color: $teal;
 }

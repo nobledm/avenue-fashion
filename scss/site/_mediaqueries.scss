@@ -12,13 +12,22 @@
 
     main { 
         margin-bottom: 3rem; 
-        padding: 0 1.5rem;
     }
 
     .client-registration {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 2rem;
+    }
+
+    [type="submit"] {
+        width: 90%;
+        font-size: $h4;
+    }
+
+    .policy-note {
+        width: 80%;
+        text-align: right;
     }
 }
 

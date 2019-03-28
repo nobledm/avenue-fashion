@@ -2,7 +2,7 @@
 
 .client-registration {
     color: $lt-grey;
-    margin: 1rem auto 0;
+    margin: 1rem auto 1.5rem;
 
     h4 {
         grid-column: span 2;
@@ -10,24 +10,19 @@
     }
 
     label {
-        font-family: $title-font;
         font-weight: 300;
     }
 
     [type="text"], select, textarea {
         width: 100%;
         border: 1px solid $lt-grey-border;
-        margin-bottom: 0.75rem;
+        margin-bottom: 1.5rem;
         color: $lt-grey;
-    }
-
-    input { 
         background-color: transparent; 
         line-height: 1.5rem;
-    }
-
-    select {
-        height: 1.8rem;
+        height: 2rem;
+        font-family: $body-font;
+        font-weight: 300;
     }
 
     [type="checkbox"] {
@@ -37,8 +32,9 @@
 
 .email, 
 .terms,
-.message,
-.services {
+.send-message,
+.services,
+.preferences {
     grid-column: span 2;
 }
 
@@ -49,21 +45,58 @@ select {
 }
 
 .terms {
-    margin-bottom: 0.5rem;
+    display: flex;
+    margin-bottom: 1rem;
+    
+    label {
+        font-family: $note-font;
+    }
 }
 
-.message {
+.send-message {
     textarea {
+        line-height: 1.5rem;
         padding: 0 2px;
         height: 11.25rem;
+        font-size: 0.9375rem;
     }
 }
 
 .services {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+
+    h4 { flex: 0 0 100%; }
 
     div {
         flex: 50%;
-        font-size: calc(8px + 1vw);
+        font-size: calc(8px + 0.9vw);
     }
+}
+
+.preferences {
+    h4 { flex: 0 0 100%; }
+
+    div {
+        width: calc(50% - 1rem);
+    }
+}
+
+[type="submit"] {
+    grid-column-start: 1;
+    font-family: $body-font;
+    font-size: calc(10px + 0.7vw);
+    color: $dark-blue;
+    letter-spacing: 3px;
+    width: 45%;
+    min-width: 11rem;
+    padding: 1rem 0;
+    margin-bottom: 1.5rem;
+    border: 2px solid $dark-grey-border;
+    background: transparent;
+}
+
+.policy-note {
+    justify-self: right;
+    font-family: $note-font;
+    width: 100%;
 }

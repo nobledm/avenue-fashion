@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <nav class="site-nav" role="navigation">
+    <nav class="site-nav uppercase" role="navigation">
         <ul class="icon-view">
             <li class="logo"><h1><span class="bold">Avenue</span> Fashion</h1></li>
             <li id="mobile-menu-button">
@@ -31,7 +31,7 @@
         </ul>
         <aside id="menu-panel" class="menu-panel">
             <ul class="mobile-link">
-                <li><a class="active" href="#">Mens</a></li>
+                <li><a class="teal" href="#">Mens</a></li>
                 <li><a href="#">Womens</a></li>
                 <li><a href="#">The Brand</a></li>
                 <li><a href="#">Local Stores</a></li>
@@ -41,7 +41,7 @@
 
         <ul class="list-view">
             <li class="logo"><h1><span class="bold">Avenue</span> Fashion</h1></li>
-            <li><a class="active" href="#">Mens</a></li>
+            <li><a class="teal" href="#">Mens</a></li>
             <li><a href="#">Womens</a></li>
             <li><a href="#">The Brand</a></li>
             <li><a href="#">Local Stores</a></li>
@@ -49,13 +49,13 @@
         </ul>
     </nav>
 
-    <header class="page-header">
+    <header class="page-header uppercase">
         <h1 class="title"><span class="bold">Avenue</span> Fashion Client Rewards</h1>
         <p class="tagline">Register Today</p>
     </header>
 
     <main>
-        <h3>Register</h3>
+        <h3 class="uppercase">Register</h3>
         <form id="client-registration" class="client-registration">
             <div class="first-name">
                 <label for="firstName">First Name</label>
@@ -94,14 +94,16 @@
 
             <style>
                 .radio-circle {
-                    display: inline-flex;
+                    box-sizing: content-box;
+                    display: flex;
+                    flex: 0 0 1.25rem;
                     justify-content: center;
                     align-items: center;
                     width: 1.25rem;
                     height: 1.25rem;
                     border-radius: 50%;
                     border: 1px solid #e7e7e7;
-                    margin-right: 0.5rem;
+                    margin-right: 1rem;
                 }
                 .inner {
                     width: 40%;
@@ -118,10 +120,7 @@
                     <div class="inner"></div>
                 </div>
                 <label>I agree to the terms and conditions of the website. I may opt out at any time.</label>
-                <!-- <input id="agree" name="agree" type="radio" />
-                <label>I agree to the terms and conditions of the website. I may opt out at any time.</label> -->
             </div>
-
             <script>
                 let radioBtn = document.querySelector('.radio-circle');
 
@@ -130,13 +129,13 @@
                 });
             </script>
             
-            <div class="message">
+            <div class="send-message">
                 <label for="message">Send us a message (optional)</label>
                 <textarea id="message"></textarea>
             </div>
 
-            <h4>Sign up for</h4>
             <aside class="flex-row services">
+                <h4>Sign up for</h4>
                 <div>
                     <input type="checkbox" name="exclusives" id="exclusives" value="exclusives"> 
                     <label for="exclusives">exclusive updates</label>
@@ -163,37 +162,44 @@
                 </div>
             </aside>
 
-            <h4>Preferences (optional)</h4>
-            <div class="language">
-                <label for="lang">Language</label>
-                <select name="lang" id="lang">
-                    <option value="english">English</option>
-                    <option value="french">French</option>
-                    <option value="spanish">Spanish</option>
-                    <option value="german">German</option>
-                </select>
-            </div>
-            <div class="size">
-                <label for="clothingSize">Clothing size</label>
-                <select name="clothing-size" id="clothingSize">
-                    <option value="xs">XS</option>
-                    <option value="small">Small</option>
-                    <option value="medium">Medium</option>
-                    <option value="large">Large</option>
-                    <option value="xl">XL</option>
-                    <option value="xxl">XXL</option>
-                </select>
-            </div>
-            <div class="location">
-                <label for="yourStore">Your Store Location</label>
-                <select name="your-store" id="yourStore">
-                    <option value="edmonton">Edmonton, AB</option>
-                </select>
-            </div>
+            <aside class="flex-row preferences">
+                <h4>Preferences (optional)</h4>
+                <div class="language">
+                    <label for="lang">Language</label>
+                    <select name="lang" id="lang">
+                        <option value="english">English</option>
+                        <option value="french">French</option>
+                        <option value="spanish">Spanish</option>
+                        <option value="german">German</option>
+                    </select>
+                </div>
+                <div class="size">
+                    <label for="clothingSize">Clothing size</label>
+                    <select name="clothing-size" id="clothingSize">
+                        <option value="xs">XS</option>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="xl">XL</option>
+                        <option value="xxl">XXL</option>
+                    </select>
+                </div>
+                <div class="store-location">
+                    <label for="yourStore">Your Store Location</label>
+                    <select name="your-store" id="yourStore">
+                        <option value="edmonton">Edmonton, AB</option>
+                    </select>
+                </div>
+            </aside>
 
-            <input type="submit" value="Create Account">
-            <p>By clicking 'Create Account', you agree to our <a href="#">Privacy Policy &#10132;</a></p>
+            <input class="uppercase" type="submit" value="Create Account">
+            <p class="policy-note">By clicking 'Create Account', you agree to our <a href="#">Privacy Policy &#10132;</a></p>
         </form>
+
+        <p class="help">
+            <span class="block bold teal uppercase">Need Help?</span>
+            If you have questions about your account, please contact <a href="#">customer service</a> 24 hours a day, 7 days a week. <span class="bold teal">1-888-555-5555</span>
+        </p>
     </main>
 
     <footer class="site-footer">

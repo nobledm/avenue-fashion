@@ -11,14 +11,12 @@ h1 { font-size: $h1; }
 h2 { font-size: $h2; }
 
 h2, h3, h4 {
-    font-family: $title-font;
     line-height: 1.5rem;
 }
 
 h3 {
     font-size: $h3;
     color: $mid-grey;
-    text-transform: uppercase;
 }
 
 h4 {

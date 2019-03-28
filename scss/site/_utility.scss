@@ -1,7 +1,9 @@
 @import '../vars/index';
 
 .bold { font-weight: 700; }
-.active { color: $teal; }
+.teal { color: $teal; }
+.block { display: block; }
+.uppercase { text-transform: uppercase; }
 
 .flex-row {
     display: flex;
