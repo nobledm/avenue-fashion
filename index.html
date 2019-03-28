@@ -77,6 +77,7 @@
                 <label for="confirmPass">Confirm Password</label>
                 <input id="confirmPass" name="confirmPass" type="text" />
             </div>
+            
             <div class="email-frequency">
                 <label for="emailFrequency">How often would you like an email?</label>
                 <select id="emailFrequency">
@@ -90,10 +91,45 @@
                 <label for="phone">Phone Number (optional)</label>
                 <input id="phone" name="phone" type="text" />
             </div>
+
+            <style>
+                .radio-circle {
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 1.25rem;
+                    height: 1.25rem;
+                    border-radius: 50%;
+                    border: 1px solid #e7e7e7;
+                    margin-right: 0.5rem;
+                }
+                .inner {
+                    width: 40%;
+                    height: 40%;
+                    border-radius: 50%;
+                    background: transparent;
+                }
+                .dot {
+                    background: #575153;
+                }
+            </style>
             <div class="terms">
-                <input id="agree" name="agree" type="radio" />
+                <div class="radio-circle" data-checked="false">
+                    <div class="inner"></div>
+                </div>
                 <label>I agree to the terms and conditions of the website. I may opt out at any time.</label>
+                <!-- <input id="agree" name="agree" type="radio" />
+                <label>I agree to the terms and conditions of the website. I may opt out at any time.</label> -->
             </div>
+
+            <script>
+                let radioBtn = document.querySelector('.radio-circle');
+
+                radioBtn.addEventListener('click', () => {
+                    radioBtn.firstElementChild.classList.toggle('dot');
+                });
+            </script>
+            
             <div class="message">
                 <label for="message">Send us a message (optional)</label>
                 <textarea id="message"></textarea>

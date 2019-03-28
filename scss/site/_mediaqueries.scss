@@ -1,15 +1,19 @@
-@media(min-width: 615px) {
-    .page-header {
-        background: url(../../img/banner.jpg) no-repeat center / cover;
+@media(min-width:460px) {
+    .services div {
+        flex: 33%;
     }
 }
 
 @media(min-width: 615px) {
     .page-header {
+        background: url(../../img/banner.jpg) no-repeat center / cover;
         margin-bottom: 4.5rem;
     }
 
-    main { margin-bottom: 3rem; }
+    main { 
+        margin-bottom: 3rem; 
+        padding: 0 1.5rem;
+    }
 
     .client-registration {
         display: grid;
