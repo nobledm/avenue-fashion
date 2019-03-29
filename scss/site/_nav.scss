@@ -10,13 +10,15 @@
 }
 
 .site-nav a,
-.mobile-links a {
+.mobile-links a,
+.site-footer a {
     color: $dark-grey;
 }
 
 .site-nav a:hover,
 .site-nav .teal,
-.mobile-links a:hover {
+.mobile-links a:hover,
+.site-footer a:hover {
     color: $teal;
 }
 
