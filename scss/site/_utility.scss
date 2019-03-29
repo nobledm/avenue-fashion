@@ -3,21 +3,17 @@
 .bold { font-weight: 700; }
 .unbold-query { font-weight: 700; }
 
-@media(min-width: 615px) {
-    .unbold-query {
-        font-weight: 400;
-    }
-}
-
 .teal { color: $teal; }
 .block { display: block; }
 .uppercase { text-transform: uppercase; }
 
-.flex-row {
+.flex-row,
+.flex-row-center {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
+.flex-row { justify-content: space-between; }
+.flex-row-center { justify-content: center; }
 
 .wrapper {
     max-width: 52.75rem;

@@ -5,10 +5,12 @@
 }
 
 @media(min-width: 38.4375rem) {
-    .page-header {
-        background: url(../../img/banner.jpg) no-repeat center / cover;
-        margin-bottom: 4.5rem;
-    }
+    .unbold-query { font-weight: 400; }
+
+    .page-header { margin-bottom: 4.5rem; }
+
+    .no-webp .page-header { background: url('../../img/banner.jpg') no-repeat center / cover; }
+    .webp .page-header { background: url('../../img/banner.webp') no-repeat center / cover; }
 
     main { 
         margin-bottom: 3rem; 
@@ -42,4 +44,17 @@
     .services div {
         font-size: 0.9375rem;
     }
+}
+
+@media(min-width: 51.5rem) {
+    .foot-links {
+        padding-bottom: 0;
+    }
+
+    .awards-foot,
+    .social-media {
+        margin-bottom: 3rem;
+    }
+
+    .awards-foot { margin-right: 2rem; }
 }

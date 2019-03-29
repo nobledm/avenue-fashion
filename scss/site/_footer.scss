@@ -1,11 +1,6 @@
 .site-footer {
     background-color: $night-grey;
     color: $mid-grey;
-    
-    aside {
-        padding: 3rem 1.5rem;
-        justify-content: center;
-    }
 
     ul {
         flex: calc(50% - 2rem);
@@ -17,23 +12,38 @@
     }
 }
 
+.foot-links { padding: 3rem 1.5rem; }
+
 .awards-foot,
 .social-media {
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 25rem;
+    min-width: 24rem;
+    height: 8.75rem;
+    margin-bottom: 1.5rem;
+    font-size: $h2;
     color: #fff;
     text-align: center;
-    width: 25rem;
-    height: 8.4375rem;
 }
 
 .awards-foot {
+    flex-direction: column;
     background-color: $night-grey;
 }
 
 .social-media {
     background-color: $teal;
+
+    svg {
+        height: 1.5rem;
+        margin-right: 2rem;
+    }
+
+    svg:last-of-type {
+        margin-right: 0;
+    }
 }
 
 .copyright {
