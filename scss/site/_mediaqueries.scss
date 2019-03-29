@@ -4,17 +4,13 @@
     }
 }
 
-@media(min-width: 38.4375rem) {
-    .unbold-query { font-weight: 400; }
-
+@media(min-width: 39rem) {
     .page-header { margin-bottom: 4.5rem; }
 
     .no-webp .page-header { background: url('../../img/banner.jpg') no-repeat center / cover; }
     .webp .page-header { background: url('../../img/banner.webp') no-repeat center / cover; }
 
-    main { 
-        margin-bottom: 3rem; 
-    }
+    main { margin-bottom: 3rem; }
 
     .client-registration {
         display: grid;
@@ -32,25 +28,26 @@
         text-align: right;
     }
 
-    .site-footer ul {
-        flex: 24.5%;
-    }
+    .foot-links ul { flex: 24.5%; }
 }
 
 @media(min-width: 47.5rem) {
+    .unbold-query { font-weight: 400; }
+    .block-query { display: block; }
+    .margin-btm-query { margin-bottom: 1.5rem; }
+    .hide-query { display: none; }
+
     .icon-view { display: none; }
     .list-view { display: flex; }
 
     .services div {
         font-size: 0.9375rem;
     }
+
+    .foot-links { padding-bottom: 0; }
 }
 
 @media(min-width: 51.5rem) {
-    .foot-links {
-        padding-bottom: 0;
-    }
-
     .awards-foot,
     .social-media {
         margin-bottom: 3rem;
