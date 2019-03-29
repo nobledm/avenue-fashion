@@ -115,11 +115,11 @@
                     background: #575153;
                 }
             </style>
-            <div class="terms">
-                <div class="radio-circle" data-checked="false" role="radio">
+            <div class="terms" role="radiogroup" aria-labelledby="terms-label">
+                <div class="radio-circle" data-checked="false" role="radio" aria-checked="false" tabindex="0">
                     <div class="inner"></div>
                 </div>
-                <label>I agree to the terms and conditions of the website. I may opt out at any time.</label>
+                <label id="terms-label">I agree to the terms and conditions of the website. I may opt out at any time.</label>
             </div>
             <script>
                 let radioBtn = document.querySelector('.radio-circle');
