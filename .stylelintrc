@@ -1,6 +1,6 @@
 {
     "rules": {
-        "unit-whitelist": ["rem", "%", "vw", "vh"],
+        "unit-whitelist": ["rem", "%", "fr", "vw", "vh"],
         "no-descending-specificity": true,
         "no-duplicate-selectors": true,
         "comment-empty-line-before": [ "always", {

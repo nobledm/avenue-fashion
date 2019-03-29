@@ -1,10 +1,10 @@
-@media(min-width:460px) {
+@media(min-width: 28.75rem) {
     .services div {
         flex: 33%;
     }
 }
 
-@media(min-width: 615px) {
+@media(min-width: 38.4375rem) {
     .page-header {
         background: url(../../img/banner.jpg) no-repeat center / cover;
         margin-bottom: 4.5rem;
@@ -35,7 +35,7 @@
     }
 }
 
-@media(min-width:760px) {
+@media(min-width: 47.5rem) {
     .icon-view { display: none; }
     .list-view { display: flex; }
 

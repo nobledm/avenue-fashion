@@ -4,6 +4,7 @@
     
     aside {
         padding: 3rem 1.5rem;
+        justify-content: center;
     }
 
     ul {
@@ -16,7 +17,27 @@
     }
 }
 
+.awards-foot,
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    width: 25rem;
+    height: 8.4375rem;
+}
+
+.awards-foot {
+    background-color: $night-grey;
+}
+
+.social-media {
+    background-color: $teal;
+}
+
 .copyright {
     font-size: $small;
     line-height: 2rem;
+    color: $lt-grey;
 }
