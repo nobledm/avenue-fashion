@@ -1,5 +1,11 @@
 @import '../vars/index';
 
+select {
+    appearance: none;
+    background: url('../../img/chevron-down-solid.svg') no-repeat right;
+    background-size: 1.25rem;
+}
+
 .client-registration {
     color: $lt-grey;
     margin: 1rem auto 1.5rem;
@@ -15,7 +21,7 @@
 
     [type="text"], select, textarea {
         width: 100%;
-        border: 1px solid $lt-grey-border;
+        border: 0.0625rem solid $lt-grey-border;
         margin-bottom: 1.5rem;
         color: $lt-grey;
         background-color: transparent; 
@@ -38,12 +44,6 @@
     grid-column: span 2;
 }
 
-select {
-    appearance: none;
-    background: url('../../img/chevron-down-solid.svg') no-repeat right;
-    background-size: 1.25rem;
-}
-
 .terms {
     display: flex;
     margin-bottom: 1rem;
@@ -56,7 +56,7 @@ select {
 .send-message {
     textarea {
         line-height: 1.5rem;
-        padding: 0 2px;
+        padding: 0 0.125rem;
         height: 11.25rem;
         font-size: 0.9375rem;
     }
@@ -71,7 +71,7 @@ select {
 .services {
     div {
         flex: 50%;
-        font-size: calc(8px + 0.9vw);
+        font-size: calc(0.5rem + 0.9vw);
     }
 }
 
@@ -84,14 +84,14 @@ select {
 [type="submit"] {
     grid-column-start: 1;
     font-family: $body-font;
-    font-size: calc(10px + 0.7vw);
+    font-size: calc(0.625rem + 0.7vw);
     color: $dark-blue;
-    letter-spacing: 3px;
+    letter-spacing: 0.1875rem;
     width: 45%;
     min-width: 11rem;
     padding: 1rem 0;
     margin-bottom: 1.5rem;
-    border: 2px solid $dark-grey-border;
+    border: 0.125rem solid $dark-grey-border;
     background: transparent;
 }
 
