@@ -49,14 +49,14 @@
         </ul>
     </nav>
 
-    <header class="page-header uppercase">
+    <header class="page-header uppercase" role="banner">
         <h1 class="title"><span class="bold">Avenue</span> Fashion Client Rewards</h1>
         <p class="tagline">Register Today</p>
     </header>
 
-    <main>
+    <main role="main">
         <h3 class="uppercase">Register</h3>
-        <form id="client-registration" class="client-registration">
+        <form id="client-registration" class="client-registration" role="form">
             <div class="first-name">
                 <label for="firstName">First Name</label>
                 <input id="firstName" name="firstName" type="text" />
@@ -102,7 +102,7 @@
                     width: 1.25rem;
                     height: 1.25rem;
                     border-radius: 50%;
-                    border: 1px solid #e7e7e7;
+                    border: 0.0625rem solid #e7e7e7;
                     margin-right: 1rem;
                 }
                 .inner {
@@ -115,8 +115,8 @@
                     background: #575153;
                 }
             </style>
-            <div class="terms">
-                <div class="radio-circle" data-checked="false">
+            <div class="terms" role="radiogroup">
+                <div class="radio-circle" data-checked="false" role="radio">
                     <div class="inner"></div>
                 </div>
                 <label>I agree to the terms and conditions of the website. I may opt out at any time.</label>

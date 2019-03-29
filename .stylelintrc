@@ -1,0 +1,14 @@
+{
+    "rules": {
+        "unit-whitelist": ["rem", "%", "vw", "vh"],
+        "no-descending-specificity": true,
+        "no-duplicate-selectors": true,
+        "comment-empty-line-before": [ "always", {
+            "except": ["first-nested"],
+            "ignore": ["stylelint-commands", "after-comment"]
+        } ],
+        "selector-max-class": 2,
+        "selector-max-compound-selectors": 2,
+        "declaration-block-single-line-max-declarations": 1
+    }
+}
