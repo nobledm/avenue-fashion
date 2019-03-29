@@ -1,9 +1,22 @@
 .site-footer {
     background-color: $night-grey;
     color: $lt-grey;
+    
+    aside {
+        padding: 3rem 1.5rem;
+
+        ul {
+            flex: calc(50% - 2rem);
+            font-weight: 300;
+        }
+
+        li:first-of-type {
+            margin-bottom: 0.5rem;
+        }
+    }
 }
 
 .copyright {
     font-size: $small;
-    line-height: 1.5rem;
+    line-height: 2rem;
 }

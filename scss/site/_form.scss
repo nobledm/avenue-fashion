@@ -62,11 +62,13 @@ select {
     }
 }
 
-.services {
+.services,
+.preferences {
     margin-bottom: 1.5rem;
-
     h4 { flex: 0 0 100%; }
+}
 
+.services {
     div {
         flex: 50%;
         font-size: calc(8px + 0.9vw);
@@ -74,8 +76,6 @@ select {
 }
 
 .preferences {
-    h4 { flex: 0 0 100%; }
-
     div {
         width: calc(50% - 1rem);
     }
